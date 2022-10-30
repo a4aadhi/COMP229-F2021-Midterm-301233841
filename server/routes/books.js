@@ -112,7 +112,7 @@ router.post('/:id', (req, res, next) => {
         "Genre": req.body.genre,
     });
 
-    book.updateOne({_id: id}, bookupdate, (err) => {
+    book.updateOne({_id: id}, updatedBook, (err) => {
         if(err)
         {
             console.log(err);
